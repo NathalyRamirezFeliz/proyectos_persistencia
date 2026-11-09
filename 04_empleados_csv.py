@@ -28,4 +28,4 @@ with open("empleados.csv","r") as f:
 with open("empleados.csv","r") as f:
     lista_empleados=list(csv.DictReader(f))
     empleado_max=max(lista_empleados,key=lambda e:e["salario"])
-    print(f"El empleado {empleado_max['empleado']} gana {empleado_max['salario']}")
+    print(f"El empleado {empleado_max["empleado"]} gana {empleado_max["salario"]}")
